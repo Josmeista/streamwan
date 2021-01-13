@@ -1,7 +1,12 @@
+
+* {
+  box-sizing: border-box;
+}
+
 .big-heading {
   font-family: 'Roboto', sans-serif;
   padding-top: 50px;
-  font-size: 400%;
+  font-size: 4rem;
   color: #850856;
 }
 
@@ -11,8 +16,10 @@
   border-style: none;
 }
 
+
 .title-heading {
-  padding: 50px 0 0 180px;
+  padding: 50px 0 0 200px;
+
 }
 
 .navbar-brand, .nav-link {
@@ -31,6 +38,7 @@ p {
 .small-heading {
   line-height: 0.1;
   font-size: 1.5rem;
+  padding-top: 10px;
 }
 
 .btn {
@@ -58,7 +66,7 @@ p {
   font-family: 'Roboto', sans-serif;
   color: #850856;
   font-weight: 900;
-  font-size: 34px;
+  font-size: 2.5rem;
   text-align: center;
   padding: 20px 0 50px 0;
 }
@@ -73,4 +81,45 @@ p {
   font-size: 1rem;
   font-family: 'nunito', sans-serif;
   color: #850856;
+}
+
+@media (max-width: 768px) {
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .title-image{
+    height: auto;
+    width: 100%;
+  }
+
+  .small-heading{
+    /* display: none; */
+    font-size: 0.8rem;
+    text-align: left;
+
+  }
+
+
+  .big-heading{
+    font-size: 2.3rem;
+  }
+
+  .title-heading{
+    padding: inherit;
+  }
+
+  .btn{
+    margin-left: 110px;
+  }
+
+  #Packages{
+    padding-top: 0;
+  }
+
+  .package-image{
+    padding-left: 40px;
+  }
+
 }

@@ -19,12 +19,17 @@ body {
   padding: 50px 0 0 200px;
 }
 
-.navbar-brand, .nav-link {
-  color: #850856;
-}
-
 .navbar {
   margin: 0;
+  overflow: hidden;
+}
+
+.navbar a{
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+
 }
 
 p {
@@ -43,7 +48,7 @@ p {
 }
 
 #packages {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 /* FAQ's */
@@ -112,13 +117,23 @@ p {
   color: #ddd;
 }
 
+
+.fa-check-circle{
+  color: #16c79a;
+}
+
+.fa-times-circle{
+  color: 	#c64756;
+}
+
+
 h3 {
   font-size: 22px;
   font-weight: 300;
   color: #555;
   line-height: 30px;
-  font-style: italic;
 }
+
 
 @media (max-width: 768px) {
   [class*="col-"] {
@@ -144,8 +159,10 @@ h3 {
     padding: inherit;
   }
 
-  #Packages {
-    padding-top: 0;
+  #packages {
+    padding-top: 30px;
+    max-width: 75%;
+    margin-left: 50px;
   }
 
   .package-image {
@@ -154,5 +171,56 @@ h3 {
 
   .footer-links a {
     text-align: center;
+    box-sizing: border-box;
   }
+
+  .card{
+    margin-bottom: 30px;
+  }
+
+  .footer-links{
+    text-align: center;
+  }
+}
+
+/* Packages css styles */
+
+.card p{
+  font-size: 1rem;
+  font-family: 'nunito', sans-serif;
+}
+
+.card h2{
+  font-family: 'roboto',sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* cardtitle */
+.card-header h3{
+  font-style:normal;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'nunito', sans-serif;
+  text-align: center;
+}
+
+
+.rate_5mbps, .rate_1ombps{
+  padding-top: 10px;
+}
+
+.rate_3mbps{
+  padding-top: 25px;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 #808080;
+}
+
+.card-header{
+  background-color: #850856;
+  width: 50%;
+  margin: 5px 0 0 50px;
+
 }
